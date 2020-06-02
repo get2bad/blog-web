@@ -1,0 +1,88 @@
+#app,body,html {
+  padding: 0;
+  margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  min-width: 1366px;
+  width: 100%;
+  height: 100%;
+}
+a,a:hover,a:active,a:visited,a:link{
+  text-decoration: none;
+  color: black;
+}
+
+blockquote{
+  border-left: 5px solid #c0c0c0;
+  padding-left: 10px;
+  margin: 0 0 0 10px !important;
+}
+
+pre{
+  background-color: #c0c0c0;
+  padding: 10px 8px;
+  margin: 10px 0 !important;
+}
+
+ul,ol{
+  margin: 0 !important;
+  padding: 0 15px !important;
+}
+
+p{
+  margin: 0;
+}
+
+.clearFloat{
+  clear: both;
+}
+
+.back{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.boxShadow{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+@keyframes colorRedToGreen{
+  0% { background-color: pink; }
+  25% { background-color: #f08080; }
+  50% { background-color: skyblue; }
+  75% { background-color: yellowgreen; }
+  100% { background-color: orange; }
+}
+
+.full{
+  height: 100%;
+  width: 100%;
+}
+
+.width50{
+  width: 50% !important;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px; /*滚动条宽度*/
+  height: 5px; /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 50%; /*滚动条的背景区域的圆角*/
+  background-color: transparent; /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /*滚动条的圆角*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c2c0c0d8; /*滚动条的背景颜色*/
+}
